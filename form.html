@@ -9,9 +9,43 @@
             display: block;
             margin-bottom: 10px;
         }
+        table{
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid lightslategrey;
+            padding: 5px 10px;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 2px 5px;
+        }
+        nav ul li a:hover{
+            background-color: lightblue;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sign UP</a></li>
+            </ul>
+        </nav>
+    </header>
     <h2>Welcome to Pitha Ghar</h2>
     <form>
         <label for="name">Your name
@@ -47,5 +81,47 @@
         <input type="reset" value="Reset">
         <input type="submit" value="submit">
     </form>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jeff Bezos</td>
+                <td>Founder Amazon</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mark Zuckerburg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
