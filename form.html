@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Pitha Ghar</h2>
+    <form>
+        <label for="name">Your name
+            <input type="text" name="" id="name" placeholder="Your Name">
+        </label>
+        <label for="email">Your email
+            <input type="email" name="" id="email" placeholder="Your Email">
+        </label>
+        <fieldset>
+            <legend>Pick one pitha</legend>
+            <label for="chitoi">
+                <input type="radio" name="pitha" id="chitoi" checked>Chitoi
+            </label>
+            <label for="vapa">
+                <input type="radio" name="pitha" id="vapa">Vapa
+            </label>
+            <label for="patisapta">
+                <input type="radio" name="pitha" id="patisapta">Patisapta
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select Bhortas</legend>
+            <label for="shutki">
+                <input type="checkbox" name="bhorta" id="shutki" checked>Shutki
+            </label>
+            <label for="sorisa">
+                <input type="checkbox" name="bhorta" id="sorisa">Sorisa
+            </label>
+            <label for="dhonia">
+                <input type="checkbox" name="bhorta" id="dhonia">Dhonia
+            </label>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
